@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #687189;
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+.dashed {
+    border-top: 2px dashed #ddd;
+    margin: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.left-section {
+    flex: 1 1 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+    color: #0F2161;
+    word-wrap: break-word;
+}
+
+.header p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.billing-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.billing-columns {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.billing-columns p {
+    font-size: 0.9em;
+    padding: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.billing-columns p:last-child {
+    flex: 2;
+}
+
+.right-section {
+    flex: 1 1 300px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.order-summary h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #0F2161;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.summary-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-info p {
+    margin: 0;
+    font-size: small;
+}
+
+.item-info .title {
+    font-weight: 600;
+    color: #0F2161;
+    font-size: 1em;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #0F2161;
+}
+
+.pricing-summary {
+    margin-top: 20px;
+}
+
+.pricing-summary p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.pricing-summary .total {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.payment-methods {
+    margin-top: 20px;
+    color: #0F2161;
+}
+
+.payment-methods .form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.payment-methods .form-input {
+    width: calc(33.333% - 10px);
+}
+
+.payment-methods .form-input label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.payment-methods .form-input input {
+    display: none;
+}
+
+.payment-methods .form-input label:hover {
+    background-color: #e0e0e0;
+}
+
+.payment-methods .form-input input:checked+label {
+    border: 2px solid #007bff;
+    background-color: #e7f0ff;
+}
+
+.payment-icon {
+    width: 85px;
+    height: auto;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.btn {
+    border: none;
+    background-color: #F7BD3F;
+    padding: 10px 20px;
+    border-radius: 0.7em;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #0F2161;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e6a300;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+    }
+
+    .billing-info {
+        background-color: #F7BD3F;
+    }
+
+    .billing-columns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .summary-item img {
+        width: 80px;
+        height: auto;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 12px 24px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+        border: none;
+    }
+
+    .payment-icon {
+        width: 75px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .container {
+        padding: 15px;
+        box-shadow: none;
+        background-color: #f5f5f5;
+    }
+
+    .left-section,
+    .right-section {
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .header p {
+        font-size: 0.8em;
+    }
+
+    .billing-info {
+        border: none;
+        background-color: #f9f9f9;
+        box-shadow: none;
+        padding: 15px;
+    }
+
+    .billing-columns p {
+        font-size: 0.8em;
+        padding: 5px 0;
+    }
+
+    .order-summary h2 {
+        font-size: 18px;
+    }
+
+    .summary-item {
+        margin-bottom: 10px;
+    }
+
+    .summary-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .item-info .title {
+        font-size: 0.9em;
+    }
+
+    .item-price {
+        font-size: 0.9em;
+    }
+
+    .pricing-summary p {
+        font-size: 0.8em;
+    }
+
+    .pricing-summary .total {
+        font-size: 0.9em;
+    }
+
+    .payment-methods h4 {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
+
+    .payment-methods .form {
+        gap: 5px;
+        margin: 15px 0;
+    }
+
+    .payment-methods .form-input {
+        width: calc(33.333% - 5px);
+    }
+
+    .payment-methods .form-input label {
+        height: 40px;
+        padding: 5px;
+    }
+
+    .payment-icon {
+        width: 50px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 15px;
+        border-radius: 8px;
+    }
+
+    .dashed {
+        margin: 15px 0;
+    }
+}

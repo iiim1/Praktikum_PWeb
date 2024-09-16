@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Confirmation</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="left-section">
+                <header class="header">
+                    <h1>Thank you for your order!</h1>
+                    <p>Your order will be processed shortly. You will receive a notification once your order is on its
+                        way</p>
+                </header>
+
+                <section class="billing-info">
+                    <div class="billing-columns">
+                        <p>Name:<br> <strong>Abdullah Azam (+62) 89788754324</strong></p>
+                        <p>Address:<br> <strong>Jl. Sambaliung, Sempaja Sel., Kec. Samarinda Utara, Kota Samarinda, Kalimantan Timur
+                                75242</strong></p>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="right-section">
+                <section class="order-summary">
+                    <h2>Order Summary</h2><br>
+                    <div class="summary-item">
+                        <img src="assets/nasi-goreng.jpeg" alt="Nasi Goreng">
+                        <div class="item-info">
+                            <p class="title">Nasi Goreng Spesial</p>
+                            <p>Qty: 1</p>
+                        </div>
+                        <p class="item-price">Rp 25.000</p>
+                    </div>
+                    <div class="summary-item">
+                        <img src="assets/es-teh-manis.jpeg" alt="Es Teh Manis">
+                        <div class="item-info">
+                            <p class="title">Es Teh Manis</p>
+                            <p>Qty: 1</p>
+                        </div>
+                        <p class="item-price">Rp 5.000</p>
+                    </div>
+                    <div class="dashed"></div>
+
+                    <section class="pricing-summary">
+                        <p><span>Subtotal</span><span>Rp 30.000</span></p>
+                        <p><span>Tax</span><span>Rp 2.000</span></p>
+                        <p class="total"><span>Order Total</span><span>Rp 37.000</span></p>
+                    </section>
+
+                    <div class="payment-methods">
+                        <div class="dashed"></div>
+                        <h4>Choose Payment Method:</h4>
+                        <div class="form">
+                            <div class="form-input">
+                                <input type="radio" name="pay" id="ovo">
+                                <label for="ovo">
+                                    <img src="assets/ovo.png" alt="OVO" class="payment-icon">
+                                </label>
+                            </div>
+                            <div class="form-input">
+                                <input type="radio" name="pay" id="gopay">
+                                <label for="gopay">
+                                    <img src="assets/gopay.png" alt="GoPay" class="payment-icon">
+                                </label>
+                            </div>
+                            <div class="form-input">
+                                <input type="radio" name="pay" id="dana">
+                                <label for="dana">
+                                    <img src="assets/dana.png" alt="Dana" class="payment-icon">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn">Confirm Order</button>
+                </section>
+            </div>
+        </div>
+    </body>
+
+</html>
