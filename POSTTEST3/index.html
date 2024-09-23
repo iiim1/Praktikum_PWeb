@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cushion Compass - Discover Your Perfect Cushion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="burger">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="biodata.html">About Me</a></li>
+                </ul>
+                <button id="lighttheme" aria-label="Toggle light theme">
+                    <img id="light" src="assets/sun.png" alt="Light theme toggle" id="theme-icon">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img src="assets/logo.png" class="logo" alt="Cushion Compass Logo">
+                <h1>Discover Your Perfect Cushion</h1>
+                <p>Effortless beauty, flawless coverage</p>
+            </div>
+        </section>
+
+        <section class="cushion-collection" id="products">
+            <h2>Cushion Collection</h2>
+            <div class="product-grid">
+                <div class="product-card" id="card">
+                    <img src="assets/skintific.png" class="product-image">
+                    <h3>SKINTIFIC</h3>
+                    <h5>Cover All Perfect Cushion</h5>
+                    <p>Rp 209.790</p>
+                </div>
+                <div class="product-card" id="card">
+                    <img src="assets/g2g.webp" class="product-image">
+                    <h3>GLAD2GLOW</h3>
+                    <h5>Perfect Cover Cushion</h5>
+                    <p>Rp 97.000</p>
+                </div>
+                <div class="product-card" id="card">
+                    <img src="assets/originote.png" class="product-image">
+                    <h3>THE ORIGINOTE</h3>
+                    <h5>High Cover Serum Cushion</h5>
+                    <p>Rp 99.000</p>
+                </div>
+                <div class="product-card" id="card">
+                    <img src="assets/bnb.webp" class="product-image">
+                    <h3>BARENBLISS</h3>
+                    <h5>True Beauty Inside Cushion</h5>
+                    <p>Rp 136.800</p>
+                </div>
+                <div class="product-card" id="card">
+                    <img src="assets/you.jpg" class="product-image">
+                    <h3>YOU BEAUTY</h3>
+                    <h5>NoutriWear+Flawless Cushion Foundation</h5>
+                    <p>Rp 140.400</p>
+                </div>
+                <div class="product-card" id="card">
+                    <img src="assets/mop.png" class="product-image">
+                    <h3>MOTHER OF PEARL</h3>
+                    <h5>Microblur Translucent Cushion</h5>
+                    <p>Rp 235.000</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>We'd love to hear from you! Whether you have a question about our products, need help with an
+                        order, or just want to say hello, we're here for you.</p>
+                    <ul>
+                        <li><img src="assets/emailDark.png" class="icon" alt="Email" id="email"> info@cushioncompass.com</li>
+                        <li><img src="assets/phoneDark.png" class="icon" alt="Phone" id="phone"> 0877-6655-4433</li>
+                        <li><img src="assets/markerDark.png" class="icon" alt="Address" id="marker"> 123 Beauty Lane, Makeup City, MC 12345</li>
+                    </ul>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <h3>Send Us a Message</h3>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="sendMassage">Send Message</button>
+                </form>
+            </div>
+            <div id="successMessage" class="messageSuccess" style="display: none;">
+                <h5>Your Message Successfully Sent</h5>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo.png" alt="Cushion Compass Logo">
+            </div>
+            <nav class="footer-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="biodata.html">About Me</a></li>
+                </ul>
+            </nav>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/imrwah_/" target="_blank">
+                    <img src="assets/instagram.png" class="icon" alt="Instagram">
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Cushion Compass. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="pop" class="pop">
+        <div class="pop-content">
+            <p>Are you sure you want to send this message?</p>
+            <button id="confirmYes" class="btn">Yes</button>
+            <button id="confirmNo" class="btn">No</button>
+            <span class="close">&times;</span>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+  
