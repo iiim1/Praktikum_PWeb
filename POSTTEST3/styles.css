@@ -540,175 +540,138 @@ footer {
     margin-bottom: 0.5rem;
 }
 
+:root {
+  /* ... (existing root variables) ... */
+}
+
+.light-theme {
+  /* ... (existing light theme variables) ... */
+}
+
+/* ... (existing global styles) ... */
+
 @media (max-width: 1200px) {
-    .navbar-container, .contact-container, .footer-content, .about-me, .cv-container {
-        padding: 0 1em;
-    }
-
-    .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    }
-
-    .product-image {
-        height: 180px;
-    }
+  .navbar-container, .contact-container, .footer-content, .about-me, .cv-container {
+    padding: 0 1em;
+  }
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5em;
+  }
+  .product-image {
+    height: 180px;
+  }
 }
 
 @media (max-width: 992px) {
-    .hero h1 {
-        font-size: 3rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
-    }
-
-    .cushion-collection h2 {
-        font-size: 2.5rem;
-    }
-
-    .contact-info, .contact-form {
-        flex-basis: auto;
-    }
-
-    .profile-sidebar {
-        padding: 1.5rem;
-    }
-
-    .profile-photo {
-        width: 150px;
-        height: 150px;
-    }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  .cushion-collection h2 {
+    font-size: 2.5rem;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-info, .contact-form {
+    width: 100%;
+  }
+  .cv-container {
+    flex-direction: column;
+  }
+  .profile-sidebar, .cv-main {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
-    .navbar-container {
-        flex-wrap: wrap;
-    }
-
-    .burger {
-        display: block;
-        order: 1;
-    }
-
-    .nav-links {
-        flex-basis: 100%;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        padding: 1em 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    #lighttheme {
-        order: 2;
-    }
-
-    .change .bar1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .change .bar2 {
-        opacity: 0;
-    }
-
-    .change .bar3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1.1rem;
-    }
-
-    .logo {
-        width: 16em;
-    }
-
-    .cushion-collection {
-        padding: 3em 1em;
-    }
-
-    .product-image {
-        height: 160px;
-    }
-
-    .contact-section h2 {
-        font-size: 2rem;
-    }
-
-    .contact-info h3, .contact-form h3 {
-        font-size: 1.6rem;
-    }
-
-    .footer-logo img {
-        width: 120px;
-    }
-
-    .cv-container {
-        flex-direction: column;
-    }
-
-    .profile-sidebar {
-        flex-basis: auto;
-    }
-
-    .cv-main {
-        flex-basis: auto;
-    }
+  .navbar-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .burger {
+    display: block;
+    order: 1;
+  }
+  .nav-links {
+    flex-basis: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  #lighttheme {
+    order: 2;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+  .logo {
+    width: 16em;
+  }
+  .cushion-collection {
+    padding: 3em 1em;
+  }
+  .product-image {
+    height: 160px;
+  }
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+  .contact-info h3, .contact-form h3 {
+    font-size: 1.6rem;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-logo, .footer-links, .footer-social {
+    margin-bottom: 1em;
+  }
 }
 
 @media (max-width: 576px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .logo {
-        width: 14em;
-    }
-
-    .cushion-collection h2 {
-        font-size: 2rem;
-    }
-
-    .product-image {
-        height: 140px;
-    }
-
-    .contact-info, .contact-form {
-        padding: 1.5em;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-links ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-social {
-        margin-top: 1em;
-    }
-
-    .profile-sidebar {
-        padding: 1.2rem;
-    }
-
-    .profile-photo {
-        width: 120px;
-        height: 120px;
-    }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 14em;
+  }
+  .cushion-collection h2 {
+    font-size: 2rem;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-image {
+    height: auto;
+    max-height: 200px;
+  }
+  .contact-info, .contact-form {
+    padding: 1.5em;
+  }
+  .footer-links ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-sidebar {
+    padding: 1.2rem;
+  }
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
 }
