@@ -540,16 +540,6 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-:root {
-  /* ... (existing root variables) ... */
-}
-
-.light-theme {
-  /* ... (existing light theme variables) ... */
-}
-
-/* ... (existing global styles) ... */
-
 @media (max-width: 1200px) {
   .navbar-container, .contact-container, .footer-content, .about-me, .cv-container {
     padding: 0 1em;
