@@ -6,8 +6,8 @@
     --navbar-hover: rgba(27, 26, 85, 0.9);
     --color-text: #9290C3;
     --color-white: #FFFFFF;
-    --font-primary: 'Playfair Display', serif;
-    --font-secondary: 'Poppins', sans-serif;
+    --font-primary: serif;
+    --font-secondary: sans-serif;
     --transition-speed: 0.3s;
     --background-img: linear-gradient(rgba(27, 26, 85, 0.7), rgba(27, 26, 85, 0.7)), url('assets/hero-background.jpg');
 }
